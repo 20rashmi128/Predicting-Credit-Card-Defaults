@@ -1,7 +1,6 @@
-# Predicting-Credit-Card-Defaults-
-Predicting credit card defaults (Classification):
+# Predicting credit card defaults (Classification):
 
-Problem Description
+# Problem Description
 This project is aimed at predicting the case of customers default payments in Taiwan. 
 From the perspective of risk management, the result of predictive accuracy of the estimated probability of default will be more valuable than the binary result of classification - credible or not credible clients. 
 
@@ -23,8 +22,8 @@ X18-X23: Amount of previous payment (NT dollar). X18 = amount paid in September,
 
 # About Dataset: 
 This dataset contains information on default payments, demographic factors, credit data, history of payment, and bill statements of credit card clients in Taiwan from April 2005 to September 2005. 
-For better understanding, the columns of dataset can be categorised as below:
 
-Demographical features: Age (Numerical), Sex, Marital Status, Education (Categorical)
-Behavioural features: History of past 6 months paid amounts (Numerical), Past 6 months Bill amounts (Numerical), 
+For better understanding, the columns of dataset can be categorised as below:
+1. Demographical features: Age (Numerical), Sex, Marital Status, Education (Categorical)
+2. Behavioural features: History of past 6 months paid amounts (Numerical), Past 6 months Bill amounts (Numerical), 
                       Repayment staus for last 6 months (Categorical), & Maximum credit line approved (Numerical).
