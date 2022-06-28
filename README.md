@@ -60,7 +60,8 @@ Built simpler baseline models and did evaluation using Recall, precision, and F-
         d. Defaulter's utilization rate increased significantly in latest month of September, while for non-defaulters the utilization rate decreased.
 4. BestPerformingModels:
 
-• Considering Recall metric with utmost importance, followed by Precision and F-1 scores, found the following top 3 models:
+        • Considering Recall metric with utmost importance, followed by Precision and F-1 scores, found the following top 3 models:
+
         1. SVM model built using TomekLinks datasetis the best performing model, with good Recall (0.57), precision (0.48), F-1 score (0.52), AUC-ROC (0.74) and least Brier score (0.14).
         2. Second best performing model is Random Forest classifier built using SMOTE dataset, with good Recall (0.55), precision (0.48), F-1 score (0.51), AUC-ROC (0.76) and Brier score (0.17).
         3. Third best performing model is XGBoost classifier built using SMOTE-TomekLinks combined dataset, with good Recall (0.55), precision (0.47), F-1 score (0.50), AUC-ROC (0.75) and Brier score (0.17)
