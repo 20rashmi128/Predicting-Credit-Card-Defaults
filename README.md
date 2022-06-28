@@ -58,7 +58,7 @@ Built simpler baseline models and did evaluation using Recall, precision, and F-
         b. Customers with payments pending for more than 1 month, have higher chances of defaulting.
         c. Defaulter's overall pay-down ratio kept on decreasing each successive month
         d. Defaulter's utilization rate increased significantly in latest month of September, while for non-defaulters the utilization rate decreased.
-4. BestPerformingModels:
+4. Best Performing Models:
 
         • Considering Recall metric with utmost importance, followed by Precision and F-1 scores, found the following top 3 models:
 
