@@ -40,22 +40,26 @@ Built simpler baseline models and did evaluation using Recall, precision, and F-
 # Conclusions:
  
 1. About Customers:
+
         a. Majority of customers are Females (~60%).
         b. Majority have University level education (~47%), followed by Graduate school level (~35%). Only 16% have High-school level education. 
         c. Majority(~53%) are single, followed by married customers (~46%). 
         d. Most of customers (~72%) are within 21 years to 40 years age group. 
         e. As per the given dataset, only ~22% customers have defaulted on payment next month.
 2. Demographics and Defaults:
+
         a. Chances of Males defaulting on their payments next month is higher than that of Females.
         b. As education level increases (i.e., high school to university to graduate school), default rate decreases.
         c. Basis Marital status, Chances of defaulting is highest for Married customers.
         d. Customers of age between 31 to 40 years are least likely to default, followed by 21 to 30 years group.
 3. Financial Behaviours and Defaults:
+
         a. Average of maximum credit limit approved for Defaulters is less than that of non-defaulters.
         b. Customers with payments pending for more than 1 month, have higher chances of defaulting.
         c. Defaulter's overall pay-down ratio kept on decreasing each successive month
         d. Defaulter's utilization rate increased significantly in latest month of September, while for non-defaulters the utilization rate decreased.
 4. BestPerformingModels:
+
 • Considering Recall metric with utmost importance, followed by Precision and F-1 scores, found the following top 3 models:
         1. SVM model built using TomekLinks datasetis the best performing model, with good Recall (0.57), precision (0.48), F-1 score (0.52), AUC-ROC (0.74) and least Brier score (0.14).
         2. Second best performing model is Random Forest classifier built using SMOTE dataset, with good Recall (0.55), precision (0.48), F-1 score (0.51), AUC-ROC (0.76) and Brier score (0.17).
