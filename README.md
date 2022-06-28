@@ -27,3 +27,36 @@ For better understanding, the columns of dataset can be categorised as below:
 1. Demographical features: Age (Numerical), Sex, Marital Status, Education (Categorical)
 2. Behavioural features: History of past 6 months paid amounts (Numerical), Past 6 months Bill amounts (Numerical), 
                       Repayment staus for last 6 months (Categorical), & Maximum credit line approved (Numerical).
+
+# Approach taken:
+# • EDA: 
+After importing relevant python Libraries, dataset file was loaded,
+and I gathered basic details about dataset. Then, univariate analysis for each variable, followed by bivariate analysis to explore the relationships between two variables and multi-variate analysis were done using histograms, bar charts, Correlation Matrix etc. Also, used data visualization tools to get better grasp of underlying trends and patterns.
+# • Data Pre-processing: 
+Extracted potential features for modelling and encoded categorical variables. After feature engineering, did stratified Train-Test splitting and later transformed predictor variables using MinMaxScaler. Using correlation matrix, SelectKBest filter method , RFE and Sequential Forward selection methods, selected important features for modelling. For handling class imbalances, experimented with various under-sampling, over-sampling and combined re-sampling techniques.
+# • Model creation & Evaluation: 
+Built simpler baseline models and did evaluation using Recall, precision, and F-1 scores. Further, assessed model’s ability to distinguish positive and negative classes using AUC-ROC and KS- statistics. Also, performed Hyper-parameter tuning of Logistic Regression, XGBoost, RandomForest and SVM classifier models. Further, experimented with moving thresholds for best F-1 score and desired Recall of 0.80.
+
+# Conclusions:
+ 
+1. About Customers:
+        a. Majority of customers are Females (~60%).
+        b. Majority have University level education (~47%), followed by Graduate school level (~35%). Only 16% have High-school level education. 
+        c. Majority(~53%) are single, followed by married customers (~46%). 
+        d. Most of customers (~72%) are within 21 years to 40 years age group. 
+        e. As per the given dataset, only ~22% customers have defaulted on payment next month.
+2. Demographics and Defaults:
+        a. Chances of Males defaulting on their payments next month is higher than that of Females.
+        b. As education level increases (i.e., high school to university to graduate school), default rate decreases.
+        c. Basis Marital status, Chances of defaulting is highest for Married customers.
+        d. Customers of age between 31 to 40 years are least likely to default, followed by 21 to 30 years group.
+3. Financial Behaviours and Defaults:
+        a. Average of maximum credit limit approved for Defaulters is less than that of non-defaulters.
+        b. Customers with payments pending for more than 1 month, have higher chances of defaulting.
+        c. Defaulter's overall pay-down ratio kept on decreasing each successive month
+        d. Defaulter's utilization rate increased significantly in latest month of September, while for non-defaulters the utilization rate decreased.
+4. BestPerformingModels:
+• Considering Recall metric with utmost importance, followed by Precision and F-1 scores, found the following top 3 models:
+        1. SVM model built using TomekLinks datasetis the best performing model, with good Recall (0.57), precision (0.48), F-1 score (0.52), AUC-ROC (0.74) and least Brier score (0.14).
+        2. Second best performing model is Random Forest classifier built using SMOTE dataset, with good Recall (0.55), precision (0.48), F-1 score (0.51), AUC-ROC (0.76) and Brier score (0.17).
+        3. Third best performing model is XGBoost classifier built using SMOTE-TomekLinks combined dataset, with good Recall (0.55), precision (0.47), F-1 score (0.50), AUC-ROC (0.75) and Brier score (0.17)
